@@ -11,9 +11,13 @@ class Queue {
     this.last = null;
     this.length = 0;
   }
+
+  //obtenemos el primer elemento de la cola
   peek() {
     return this.first;
   }
+
+  //agremamos un elemento al final de la cola
   enqueue(value) {
     const newNode = new Node(value);
     if (this.length === 0) {
